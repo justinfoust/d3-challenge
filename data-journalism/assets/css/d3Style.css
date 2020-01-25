@@ -23,18 +23,23 @@
     cursor: pointer;
 }
 
+
+
 /* font size dependent on radius, see app.js */
 .stateText {
     font-family: sans-serif;
     fill: #fff;
     text-anchor: middle;
-/*    z-index: -300;*/
 }
 
 .stateCircle {
     fill: #89bdd3;
     stroke: #e3e3e3;
 /*    z-index: 300;*/
+}
+
+g[data-group="data"] > g:hover > .stateCircle {
+    stroke: gray;
 }
 
 .chart {
